@@ -1,0 +1,24 @@
+.schedule {
+    padding: 100px 15px;
+    margin: auto;
+
+    @include media(md) { 
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &__title {
+        text-align: center;
+        color: $purple;
+    }
+
+    &__content {
+        width: 100%;
+
+        p {
+            text-align: center;
+            max-width: 600px;
+            margin: auto;
+        }
+    }
+}

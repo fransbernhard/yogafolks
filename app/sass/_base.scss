@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.home {
+    background-color: $yellow;
+}
+
+body.page-template-template-membership,
+body.error404 {
+    background-color: $purple;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    width: 100%;
+
+    &--introduction {
+        padding: 100px 0 40px;
+    }
+
+    &--about {
+        padding: 60px 0 40px;
+    }
+
+    &--error {
+        margin: auto;
+    }
+
+    @include media(md) { 
+        padding: 60px 0;
+    }
+}
+
+.wrapper {
+    padding: 0 15px;
+
+    @include media(md) { 
+        padding: 0;
+    }
+}
+
+
