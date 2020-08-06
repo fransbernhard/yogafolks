@@ -2,13 +2,14 @@
     position: fixed;
     z-index: 99999;
     width: 100%;
+    top: 0;
     
     @include media(md) { 
         display: flex;
         justify-content: space-between;
     }
 
-    &__responsive {
+    &__mobile {
         position: relative;
         z-index: 9999999;
         display: flex;

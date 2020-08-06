@@ -17,7 +17,7 @@
     <body <?php body_class("name"); ?>>
 
         <header class="header">
-            <div class="header__responsive">
+            <div class="header__mobile">
                 <a class="header__logo" href="<?= get_site_url(); ?>">
                     <img class="header__logo-image" src="<?= get_template_directory_uri() . "/dist/img/logo.png"; ?>"/>
                 </a>

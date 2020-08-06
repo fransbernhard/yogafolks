@@ -29,8 +29,8 @@
 
         @include media(md) { 
             display: block;
-            width: 22px;
-            height: 22px;
+            width: 24px;
+            height: 24px;
             margin-bottom: 10px;
         }
 
@@ -39,11 +39,11 @@
         }
 
         &--facebook {
-            background-image: url('./img/facebook_white.svg');
+            background-image: url('./img/facebook_purple.png');
         }
 
         &--instagram{
-            background-image: url('./img/instagram_white.png');
+            background-image: url('./img/instagram_purple.png');
         }
     }
 }
