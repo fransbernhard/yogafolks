@@ -1,15 +1,4 @@
 <?php 
-
-    // function add_adobe_fonts() {
-    //     wp_enqueue_style( 'adobe_web_fonts', 'https://use.typekit.net/kih0qpu.css' );
-    // }
-    // add_action( 'wp_enqueue_scripts', 'add_adobe_fonts' );
-
-    // function add_adobe_fonts() {
-    //     wp_enqueue_script( 'adobe_edge_web_fonts', '//use.edgefonts.net/open-sans.js' );
-    // }
-    // add_action( 'wp_enqueue_scripts', 'add_adobe_fonts' );
-
     // Include style + js files
     function get_my_scripts(){
         wp_enqueue_style(
@@ -57,7 +46,6 @@
         load_child_theme_textdomain( 'yogafolks', get_stylesheet_directory() . '/lang' );
     }
     add_action( 'after_setup_theme', 'add_translations' );
-
 
     // Removes from admin menu
     function my_remove_admin_menus() {
