@@ -1,0 +1,101 @@
+.single {
+    min-height: 100vh;
+    background-color: $yellow;
+    
+    .single-training & {
+        background-color: $darkGreen;
+    }
+
+    .single-event & {
+        background-color: $purple;
+    }
+
+    &__wrapper {
+        max-width: $maxWidth;
+        margin: 0 auto;
+        padding: 150px 15px 60px;
+
+        @include media(md) { 
+            padding-top: 100px;
+        }
+    }
+
+    &__border {
+        position: relative;
+
+        @include media(lg) { 
+            border: 20px solid $green;
+            padding: 20px;
+        }
+
+        &::after {
+            content: "";
+            display: none;
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background-color: $purple;
+            background-image: url("./img/logo_yellow.png");
+            background-position: right;
+            background-size: 90%;
+            background-repeat: no-repeat;
+            width: 130px;
+            height: 75px;
+
+            .single-treatment & {
+                background-color: $yellow;
+                background-image: url("./img/logo_purple.png");
+            }
+
+            .single-training & {
+                background-color: $darkGreen;
+            }
+
+            @include media(lg) { 
+                display: block;
+            }
+        }
+    }
+
+    &__title {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        color: black;
+        font-size: 46px;
+        margin-bottom: 15px;
+        font-weight: normal;
+
+        .single-training & {
+            color: $yellow;
+        }
+
+        .single-event & {
+            color: $yellow;
+        }
+
+        @include media(md) { 
+            font-size: 66px;
+        }
+    }
+
+    &__text {
+        margin: 0 auto;
+
+        p {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            color: black;
+
+            .single-training & {
+                color: $yellow;
+            }
+
+            .single-event & {
+                color: $yellow;
+            }
+        }
+    }
+}

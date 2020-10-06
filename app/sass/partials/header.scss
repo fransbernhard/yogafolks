@@ -9,6 +9,14 @@
         justify-content: space-between;
     }
 
+    .logged-in & {
+        top: 0px!important;
+
+        @include media(md) { 
+            top: 32px!important;
+        }
+    }
+
     &__mobile {
         position: relative;
         z-index: 9999999;

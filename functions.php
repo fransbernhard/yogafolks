@@ -9,7 +9,7 @@
         wp_enqueue_script(
             "script", 
             get_template_directory_uri() . "/dist/script.min.js", 
-            array("jquery"), 
+            ["jquery"], 
             false, 
             true
         );
@@ -85,7 +85,10 @@
     }
     add_filter( 'allowed_block_types', 'restrict_blocks', 10, 2);
 
-
     if( function_exists('acf_add_options_page') ) {
         acf_add_options_page();
+    }
+
+    foreach (glob(__DIR__.'/src/posttypes/*') as $file) {
+        require_once $file;
     }

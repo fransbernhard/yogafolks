@@ -1,2 +1,11 @@
 node_modules
 dist
+
+# Dotenv
+.env
+.env.*
+!.env.j2
+!.env.example
+web.env
+
+env.php

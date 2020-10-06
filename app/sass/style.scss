@@ -5,15 +5,19 @@
 @import "utils/keyframes";
 
 @import "base";
-@import "header";
-@import "menu";
-@import "social";
 @import "editor";
 
 @import "blocks/introduction";
 @import "blocks/contact";
 @import "blocks/about";
 
-@import "page-memberships";
-@import "page-schedule";
-@import "page-error";
+@import "partials/item";
+@import "partials/header";
+@import "partials/menu";
+@import "partials/social";
+
+@import "containers/page-memberships";
+@import "containers/page-schedule";
+@import "containers/page-error";
+@import "containers/page-archive";
+@import "containers/single";

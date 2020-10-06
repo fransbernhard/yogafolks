@@ -21,8 +21,7 @@
             <div class="introduction__description"><?php the_sub_field("description"); ?></div>
             <div class="introduction__links">
                 <?php foreach($links as $link): ?>
-                    <?php $url = $link['hash_link'] ? "#" . $link['hash_link'] : $link['link']['url']; ?>
-                    <a class="introduction__link" href="<?= $url ?>" >
+                    <a class="introduction__link" href="<?= $link['link']['url']; ?>" >
                         <?= $link['link_text']; ?>
                     </a>
                 <?php endforeach; ?>
