@@ -1,7 +1,7 @@
 .trainings {
     $root: &;
 
-    background-color: $yellow;
+    background-color: $darkGreen;
     padding: 150px 15px 60px;
     min-height: 100vh;
 
@@ -22,7 +22,7 @@
 
     &__title {
         text-align: center;
-        color: black;
+        color: $yellow;
         font-size: 46px;
         margin-bottom: 25px;
         font-weight: normal;
