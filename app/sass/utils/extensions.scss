@@ -1,0 +1,24 @@
+%heading-large {
+    font-family: futura-pt-bold, arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: $yellow;
+    display: block;
+    margin-bottom: 25px;
+
+    @include media(md) { 
+        font-size: 60px;
+    }
+}
+
+%heading-medium {
+    font-family: futura-pt, arial, sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+    color: $yellow;
+    margin-bottom: 20px;
+}
+
+// %h2 {
+
+// }

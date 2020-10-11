@@ -44,7 +44,9 @@
         }
 
         ul {
+            display: flex;
             padding: 4px 8px;
+            background-color: yellow;
 
             .page-template-template-schedule & {
                 background-color: white;
@@ -61,6 +63,8 @@
             letter-spacing: .8px;
             display: block;
             text-align: right;
+            white-space: nowrap;
+            padding: 20px 15px;
         }
     
     }

@@ -3,21 +3,23 @@
 @import "utils/mixins";
 @import "utils/typography";
 @import "utils/keyframes";
+@import "utils/extensions";
 
 @import "base";
 @import "editor";
 
-@import "blocks/introduction";
 @import "blocks/contact";
-@import "blocks/about";
 
-@import "partials/item";
 @import "partials/header";
 @import "partials/menu";
 @import "partials/social";
+@import "partials/introduction";
+@import "partials/about";
 
-@import "containers/page-memberships";
-@import "containers/page-schedule";
-@import "containers/page-error";
-@import "containers/page-archive";
+@import "containers/memberships";
+@import "containers/schedule";
+@import "containers/error";
+@import "containers/activities";
+@import "containers/treatments";
+@import "containers/trainings";
 @import "containers/single";

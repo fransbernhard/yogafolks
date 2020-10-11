@@ -1,6 +1,6 @@
 .header {
     position: fixed;
-    z-index: 99999;
+    // z-index: 99999;
     width: 100%;
     top: 0;
     
@@ -19,7 +19,7 @@
 
     &__mobile {
         position: relative;
-        z-index: 9999999;
+        // z-index: -1;
         display: flex;
         justify-content: space-between;
         align-items: center;

@@ -1,4 +1,15 @@
 .about {
+    padding: 60px 0 40px;
+    background-color: $darkGreen;
+
+    &__wrapper {
+        padding: 0 15px;
+
+        @include media(md) { 
+            padding: 0;
+        }
+    }
+
     &__border {
         margin: 0 auto;
         position: relative;
@@ -40,8 +51,7 @@
         font-size: 40px;
         font-weight: bold;
         margin-bottom: 20px;
-        
-
+    
         @include media(md) { 
             font-size: 72px;
         }
@@ -73,6 +83,26 @@
         }
 
         p {
+            margin-bottom: 20px;
+            color: $yellow;
+        }
+    }
+
+    &__contact {
+        &__map {
+            display: block;
+            object-fit: contain;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 20px;
+    
+            @include media(md) { 
+                width: 800px;
+            }
+        }
+    
+        &__information {
+            text-align: center;
             margin-bottom: 20px;
             color: $yellow;
         }

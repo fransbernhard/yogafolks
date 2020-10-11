@@ -1,14 +1,14 @@
 <?php
 
-function register_course() {
+function register_activity() {
 
-    $single = _x('Course', 'Post type single string');
-    $plural = _x('Courses', 'Post type plural string');
+    $single = _x('Activity', 'Post type single string');
+    $plural = _x('Activities', 'Post type plural string');
     $labels = post_type_labels($single, $plural);
 
     $args = [
-        'label' => __('Course'),
-        'description' => __('Courses'),
+        'label' => __('Activity'),
+        'description' => __('Activities'),
         'labels' => $labels,
         'supports' => ['title', 'editor', 'thumbnail', 'revisions'],
         'hierarchical' => false,
@@ -24,10 +24,10 @@ function register_course() {
         'exclude_from_search' => true,
         'publicly_queryable' => true,
         'capability_type' => 'page',
-        'menu_icon' => 'dashicons-editor-customchar',
+        'menu_icon' => 'dashicons-admin-site-alt',
     ];
 
-    register_post_type('course', $args);
+    register_post_type('activity', $args);
 }
 
-add_action('init', 'register_course', 0);
+add_action('init', 'register_activity', 0);

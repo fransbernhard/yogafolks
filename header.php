@@ -36,7 +36,8 @@
                     'container' => 'nav',
                     'container_class' => 'menu menu--desktop',
                     'container_id' => 'menu_desktop',
-                    'menu_class' => 'menu__list'
+                    'menu_class' => 'menu__list',
+                    'walker' => new My_Menu_Walker()
                 ];
                 $menuItems = wp_nav_menu($arguments);
             ?>

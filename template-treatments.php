@@ -15,24 +15,24 @@
 
 <?php get_header(); ?>
 
-<main class="archive archive--treatment">
-    <div class="archive__wrapper">
-        <h1 class="archive__title"><?= get_the_title($post->ID); ?></h1>
-        <div class="archive__text">
+<main class="treatments">
+    <div class="treatments__wrapper">
+        <h1 class="treatments__title"><?= get_the_title($post->ID); ?></h1>
+        <div class="treatments__text">
             <?= get_the_content($post->ID); ?>
         </div>      
         <?php if(!empty($items)): ?>
-            <div class="archive__list">
+            <div class="treatments__list">
                 <?php foreach($items as $item): ?>
-                    <a class="item" href=<?= get_permalink($item->ID); ?> >
-                        <div class="item__image-container">
+                    <a class="treatments__item" href=<?= get_permalink($item->ID); ?> >
+                        <div class="treatments__item__image-container">
                             <div 
                                 style="background-image: url(<?= get_the_post_thumbnail_url($item->ID, "large"); ?>);"
-                                class="item__image"
+                                class="treatments__item__image"
                             ></div>
                         </div>
-                        <div class="item__content">
-                            <h2 class="item__title"><?= get_the_title($item->ID); ?></h2>
+                        <div class="treatments__item__content">
+                            <h2 class="treatments__item__title"><?= get_the_title($item->ID); ?></h2>
                         </div>
                     </a>
                 <?php endforeach; ?>
