@@ -45,7 +45,7 @@
         <div class="about__wrapper">
             <div class="about__border">
                 <h2 class="about__title"><?= $aboutTitle; ?></h2>
-                <div class="about__text">
+                <div class="about__text wysiwyg">
                     <?= $aboutText; ?>
                 </div>
 

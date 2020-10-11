@@ -1,15 +1,10 @@
 <?php get_header(); ?>
 
-<main class="main">
-    <?php if(have_rows("blocks")): ?>
-        <?php while(have_rows("blocks")): the_row(); ?>
-            <?php if(get_row_layout() == "introduction"): ?>
-                <?php get_template_part("./blocks/introduction"); ?>
-            <?php elseif(get_row_layout() == "content"): ?>
-                <?php get_template_part("./blocks/content"); ?>
-            <?php endif; ?>
-        <?php endwhile; ?>
-    <?php endif; ?>
+<main class="main error">
+    <section class="section section--error">
+        <h1 class="error__title"><?php the_field("error_title", "option"); ?></h1>
+        <div class="error__text"><?php the_field("error_text", "option") ?></div>
+    </section>
 </main>
 
 <?php get_footer(); ?>

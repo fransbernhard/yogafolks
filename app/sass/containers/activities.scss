@@ -12,6 +12,11 @@
     &__wrapper {
         max-width: $maxWidth;
         margin: 0 auto;
+        padding: 0 15px;
+
+        @include media(md) { 
+            padding: 0;
+        }
     }
 
     &__title {
