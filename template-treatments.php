@@ -25,12 +25,11 @@
             <div class="treatments__list">
                 <?php foreach($items as $item): ?>
                     <a class="treatments__item" href=<?= get_permalink($item->ID); ?> >
-                        <div class="treatments__item__image-container">
-                            <div 
-                                style="background-image: url(<?= get_the_post_thumbnail_url($item->ID, "large"); ?>);"
-                                class="treatments__item__image"
-                            ></div>
-                        </div>
+                        <img 
+                            src="<?= get_the_post_thumbnail_url($item->ID, "large"); ?>" 
+                            alt="" 
+                            class="treatments__item__image"
+                        />
                         <div class="treatments__item__content">
                             <h2 class="treatments__item__title"><?= get_the_title($item->ID); ?></h2>
                         </div>

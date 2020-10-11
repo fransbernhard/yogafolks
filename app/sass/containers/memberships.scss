@@ -1,9 +1,13 @@
 .memberships {
     background-color: $purple;
-    padding: 150px 15px 0;
 
-    @include media(md) { 
-        padding: 0;
+    &__wrapper {
+        padding-top: 120px;
+
+        @include media(md) { 
+            padding-top: 150px;
+            padding-bottom: 60px;
+        }
     }
 
     &__border {
@@ -16,10 +20,6 @@
             min-height: 800px;
             max-width: $maxWidth;
             padding: 40px 0 0;
-        }
-
-        @include media(xl) { 
-            padding: 100px 0;
         }
 
         &::after {
