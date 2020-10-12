@@ -3,6 +3,7 @@
 
     @include media(md) { 
         display: block;
+        z-index: 99999999;
     }
 }
 

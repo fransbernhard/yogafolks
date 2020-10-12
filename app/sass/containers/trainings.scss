@@ -2,33 +2,25 @@
     $root: &;
 
     background-color: $darkGreen;
-    padding: 150px 15px 60px;
     min-height: 100vh;
-
-    @include media(md) { 
-        padding-top: 150px;
-    }
 
     &__wrapper {
         max-width: $maxWidth;
         margin: 0 auto;
-
-        padding: 0 15px;
+        padding: 120px 15px 40px;
 
         @include media(md) { 
-            padding: 0;
+            padding: 120px 0 60px;
         }
     }
 
     &__title {
+        @extend %h1;
         text-align: center;
         color: $yellow;
-        font-size: 46px;
         margin-bottom: 25px;
-        font-weight: normal;
 
         @include media(md) { 
-            font-size: 66px;
             margin-bottom: 40px;
         }
     }

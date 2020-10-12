@@ -45,25 +45,24 @@
 
         ul {
             display: flex;
-            background-color: $yellow;
-
-            .page-template-template-schedule & {
-                background-color: white;
-                z-index: 9999;
-            }
         }
 
         li a {
             font-family: futura-pt, arial, sans-serif;
-            font-weight: 500;
+            font-weight: $weightNormal;
             font-size: 18px;
-            color: #3A3468;
+            color: $darkPurple;
             padding-bottom: 5px;
             letter-spacing: .8px;
             display: block;
             text-align: right;
             white-space: nowrap;
             padding: 20px 15px;
+
+            .page-template-template-membership &,
+            .page-template-template-activities & {
+                color: white;
+            }
         }
     
     }

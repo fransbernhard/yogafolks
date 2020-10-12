@@ -1,12 +1,12 @@
 .about {
-    padding: 60px 0 40px;
+    
     background-color: $darkGreen;
 
     &__wrapper {
-        padding: 0 15px;
+        padding: 60px 15px 40px;
 
         @include media(md) { 
-            padding: 0;
+            padding: 60px 0 40px;
         }
     }
 
@@ -18,11 +18,7 @@
             border: 20px solid $green;
             width: 80vw;
             max-width: $maxWidth;
-            padding: 60px 0 40px;
-        }
-
-        @include media(xl) { 
-            padding: 160px 0;
+            padding: 60px 0;
         }
 
         &::after {

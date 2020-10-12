@@ -1,11 +1,9 @@
 .introduction {
-    padding: 150px 0 40px;
-
     &__wrapper {
-        padding: 0 15px;
+        padding: 100px 15px 40px;
 
         @include media(md) { 
-            padding: 0;
+            padding: 80px 0 60px;
         }
     }
     
@@ -16,17 +14,12 @@
         align-items: center;
 
         @include media(md) { 
-            height: auto;
             margin: 0 auto;
             position: relative;
             border: 20px solid $green;
             width: 80vw;
             max-width: $maxWidth;
-            padding: 60px 0;
-        }
-
-        @include media(xl) { 
-            padding: 160px 0;
+            padding: 60px 0 80px;
         }
 
         &::after {
@@ -76,6 +69,8 @@
         }
 
         p {
+            @extend %body-copy-18;
+            font-weight: $weightMedium;
             text-align: center;
         }
     }
@@ -96,7 +91,7 @@
     &__link {
         font-family: futura-pt, arial, sans-serif;
         font-size: 24px;
-        font-weight: 500;
+        font-weight: $weightNormal;
         letter-spacing: 1.1;
         text-align: center;
         color: $yellow;

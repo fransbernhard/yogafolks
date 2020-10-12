@@ -1,3 +1,89 @@
 .wysiwyg {
-    
+
+    .about & {
+        color: $yellow;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        @extend %h1;
+    }
+
+    h2 {
+        @extend %h2;
+        margin-bottom: 10px;
+
+        + ul,
+        + ol {
+            margin-top: 8px;
+            margin-bottom: 25px;
+        }
+    }
+
+    h3 {
+        @extend %h3;
+        font-weight: $weightLight;
+        margin-bottom: 10px;
+
+        + ul,
+        + ol {
+            margin-top: 8px;
+            margin-bottom: 25px;
+        }
+    }
+
+    h4 {
+        @extend %h4;
+        margin-bottom: 10px;
+
+        + ul,
+        + ol {
+            margin-top: 8px;
+            margin-bottom: 25px;
+        }
+    }
+
+    p {
+        @extend %body-copy-18;
+        margin-bottom: 5px;
+    }
+
+    b {
+        font-weight: bold;
+    }
+
+    i {
+        font-style: italic;
+    }
+
+    ol,
+    ul {
+        margin-bottom: 20px;
+    }
+
+    li {
+        @extend %body-copy-18;
+        margin-bottom: 8px;
+    }
+
+    ul li {
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 11px;
+            width: 11px;
+            border-radius: 50%;
+            background-color: $yellow;
+            margin-right: 15px;
+        }
+    }
+
+    blockquote {
+        @extend %body-copy-18;
+        padding: 20px;
+    }
 }

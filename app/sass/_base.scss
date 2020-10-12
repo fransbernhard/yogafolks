@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body.home {
     background-color: $yellow;
 }
@@ -21,3 +25,28 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+h1, 
+h2, 
+h3 {
+    font-family: futura-pt-bold, arial, sans-serif;
+    font-weight: $weightBold;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+h1 {
+    @extend %h1;
+}
+
+p {
+    @extend %body-copy-18;
+}
+
+a {
+    font-family: $fontFutura;
+    text-decoration: none;
+    color: black;
+}
+

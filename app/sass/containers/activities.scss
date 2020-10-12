@@ -7,22 +7,20 @@
     &__wrapper {
         max-width: $maxWidth;
         margin: 0 auto;
-        padding-top: 120px 15px 0;
+        padding: 100px 15px 0;
 
         @include media(md) { 
-            padding: 150px 0 60px;
+            padding: 120px 0 60px;
         }
     }
 
     &__title {
+        @extend %h1;
         text-align: center;
         color: $yellow;
-        font-size: 46px;
         margin-bottom: 25px;
-        font-weight: normal;
 
         @include media(md) { 
-            font-size: 66px;
             margin-bottom: 60px;
         }
     }
@@ -42,6 +40,7 @@
         margin-bottom: 30px;
 
         &__link {
+            @extend %body-copy-16;
             display: block;
             padding: 15px 25px;
             margin-right: 15px;
@@ -125,6 +124,7 @@
         }
 
         &__title {
+            @extend %h4;
             margin-bottom: 0;
         }
 
@@ -141,5 +141,4 @@
             display: block;
         }
     }
-
 }

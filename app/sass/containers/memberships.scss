@@ -2,11 +2,10 @@
     background-color: $purple;
 
     &__wrapper {
-        padding-top: 120px;
+        padding: 120px 15px 40px;
 
         @include media(md) { 
-            padding-top: 150px;
-            padding-bottom: 60px;
+            padding: 100px 0 60px;
         }
     }
 
@@ -19,7 +18,7 @@
             width: 85vw;
             min-height: 800px;
             max-width: $maxWidth;
-            padding: 40px 0 0;
+            padding: 20px 0;
         }
 
         &::after {
@@ -43,15 +42,10 @@
     }
 
     &__title {
+        @extend %h1;
         text-align: center;
         color: $yellow;
-        font-size: 46px;
         margin-bottom: 15px;
-        font-weight: normal;
-
-        @include media(md) { 
-            font-size: 66px;
-        }
     }
 
     &__text {
