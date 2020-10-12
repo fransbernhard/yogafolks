@@ -25,6 +25,7 @@
 
         @include media(lg) { 
             border: 20px solid $green;
+            min-height: 800px;
             padding: 20px;
         }
 

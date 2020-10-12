@@ -2,7 +2,7 @@
     background-color: $purple;
 
     &__wrapper {
-        padding: 120px 15px 40px;
+        padding: 150px 15px 40px;
 
         @include media(md) { 
             padding: 100px 0 60px;

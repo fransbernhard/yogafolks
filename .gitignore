@@ -9,3 +9,5 @@ dist
 web.env
 
 env.php
+
+.DS_Store

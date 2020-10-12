@@ -17,7 +17,7 @@ function register_training() {
         'show_in_menu' => true,
         'menu_position' => 5,
         'show_in_admin_bar' => true,
-        'show_in_nav_menus' => false,
+        'show_in_nav_menus' => true,
         'show_in_rest' => true,
         'can_export' => true,
         'has_archive' => false,
