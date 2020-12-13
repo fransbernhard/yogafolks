@@ -1,4 +1,4 @@
-<?php 
+<?php
     $socialList = get_field('social', 'option');
 ?>
 
@@ -6,14 +6,15 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <meta 
-            name="viewport" 
+        <meta
+            name="viewport"
             content="width=device-width, initial-scale=1.0"
         >
         <title><?= get_bloginfo("name"); ?></title>
         <link rel="stylesheet" href="https://use.typekit.net/kih0qpu.css">
         <?php wp_head(); ?>
     </head>
+
     <body <?php body_class("name"); ?>>
 
         <header class="header">
@@ -29,20 +30,19 @@
                 </div>
             </div>
 
-            <?php 
+            <?php
                 $arguments = [
                     'menu' => 'primary-menu',
                     'theme_location' => 'primary-menu',
                     'container' => 'nav',
                     'container_class' => 'menu menu--desktop',
                     'container_id' => 'menu_desktop',
-                    'menu_class' => 'menu__list',
-                    'walker' => new My_Menu_Walker()
+                    'menu_class' => 'menu__list'
                 ];
                 $menuItems = wp_nav_menu($arguments);
             ?>
             <div>
-                <?php 
+                <?php
                     $arguments = [
                         'menu' => 'primary-menu',
                         'theme_location' => 'primary-menu',
@@ -56,9 +56,9 @@
 
                 <div class="social">
                     <?php foreach($socialList as $item): ?>
-                        <a 
-                            href="<?= $item["url"]; ?>" 
-                            class="social__item social__item--<?= $item["media"]; ?>" 
+                        <a
+                            href="<?= $item["url"]; ?>"
+                            class="social__item social__item--<?= $item["media"]; ?>"
                             target="_blank">
                         </a>
                     <?php endforeach; ?>
@@ -69,8 +69,7 @@
 
 
 
-        
 
-        
 
-        
+
+
