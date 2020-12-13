@@ -59,6 +59,17 @@
     }
 }
 
+%body-copy-20 {
+    font-family: $fontFutura;
+    font-size: 1.8rem;
+    font-weight: $weightMedium;
+    line-height: 1.3;
+
+    @include media(md) {
+        font-size: 2rem;
+    }
+}
+
 %body-copy-18 {
     font-family: $fontFutura;
     font-size: 1.6rem;

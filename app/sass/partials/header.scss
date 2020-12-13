@@ -18,8 +18,8 @@
     .single-training & {
         background-color: $darkGreen;
     }
-    
-    @include media(md) { 
+
+    @include media(md) {
         display: flex;
         justify-content: space-between;
     }
@@ -27,7 +27,7 @@
     .logged-in & {
         top: 0px!important;
 
-        @include media(md) { 
+        @include media(md) {
             top: 32px!important;
         }
     }
@@ -42,7 +42,7 @@
         width: 100%;
         box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
 
-        @include media(md) { 
+        @include media(md) {
             background-color: transparent;
             box-shadow: none;
             align-items: flex-start;
