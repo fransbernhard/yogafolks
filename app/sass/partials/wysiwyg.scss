@@ -15,10 +15,14 @@
         font-style: italic;
         font-size: 1.2rem;
         color: $grey;
+
+        .single-treatment & {
+            color: white;
+        }
     }
 
     img {
-        min-width: 100%;
+        width: 100%;
         display: block;
         height: auto;
         object-fit: cover;
@@ -119,8 +123,7 @@
     h5,
     p,
     li,
-    a,
-    figcaption {
+    a {
         .single-treatment & {
             color: white;
             @extend %body-copy-20;
