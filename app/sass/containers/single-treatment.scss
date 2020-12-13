@@ -49,11 +49,15 @@
         color: white;
         position: absolute;
         font-size: 2.6rem;
-        top: -60px;
+        top: -80px;
         right: 15px;
         border: 4px solid $yellow;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include media(md) {
+            top: -60px;
+        }
     }
 }

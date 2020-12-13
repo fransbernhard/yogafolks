@@ -126,6 +126,13 @@
     a {
         .single-treatment & {
             color: white;
+        }
+    }
+
+    p,
+    li,
+    a {
+        .single-treatment & {
             @extend %body-copy-20;
         }
     }

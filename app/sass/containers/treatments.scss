@@ -59,19 +59,28 @@
 
     &__item {
         width: 100%;
-        display: flex;
         margin-bottom: 24px;
         box-shadow: 4px 4px 10px rgba(33,33,33,.2);
         background-color:white;
         border-radius: 5px;
         padding: 20px;
 
+        @include media(md) {
+            display: flex;
+        }
+
         img {
             display: block;
-            flex: 0 0 auto;
-            width: 160px;
-            height: 160px;
-            object-fit: cover;
+            width: 100%;
+            margin-bottom: 10px;
+
+            @include media(md) {
+                margin-bottom: 0;
+                flex: 0 0 auto;
+                width: 160px;
+                height: 160px;
+                object-fit: cover;
+            }
         }
 
         &__title {
@@ -83,7 +92,9 @@
         }
 
         &__content {
-            margin-left: 20px;
+            @include media(md) {
+                margin-left: 20px;
+            }
         }
 
         &__links {
