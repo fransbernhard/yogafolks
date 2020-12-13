@@ -64,7 +64,7 @@
                         $listTitle = get_field('list_title', $item->ID);
                         $listTitle = $listTitle ? $listTitle : $item->post_title;
 
-                        $bookLink = get_field('book_link', $post->ID);
+                        $bookLink = get_field('book_link', $item->ID);
                     ?>
                     <div class="treatments__item">
                         <?php if(!empty($listImageUrl)): ?>
