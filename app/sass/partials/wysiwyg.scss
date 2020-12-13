@@ -4,9 +4,23 @@
         color: $yellow;
     }
 
-    img {
+    figure {
+        margin: 0;
+        padding: 0;
         width: 100%;
+        margin: 20px 0;
+    }
+
+    figcaption {
+        font-style: italic;
+        color: $grey;
+    }
+
+    img {
+        min-width: 100%;
+        display: block;
         height: auto;
+        object-fit: cover;
     }
 
     h1 {
@@ -24,9 +38,8 @@
         }
     }
 
-    h3 {
+    h3, h4, h5 {
         @extend %h3;
-        font-weight: $weightLight;
         margin-bottom: 10px;
 
         + ul,
@@ -50,6 +63,13 @@
     p {
         @extend %body-copy-18;
         margin-bottom: 5px;
+
+        + h2,
+        + h3,
+        + h4,
+        + h5 {
+            margin-top: 30px;
+        }
     }
 
     b {
@@ -60,9 +80,14 @@
         font-style: italic;
     }
 
+    a {
+        text-decoration: underline;
+    }
+
     ol,
     ul {
         margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     li {
@@ -74,8 +99,8 @@
         &::before {
             content: '';
             display: inline-block;
-            height: 11px;
-            width: 11px;
+            height: 8px;
+            width: 8px;
             border-radius: 50%;
             background-color: $yellow;
             margin-right: 15px;

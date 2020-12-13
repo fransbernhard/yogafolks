@@ -1,0 +1,75 @@
+.single-treatment {
+    min-height: 100vh;
+    background-color: white;
+
+    &__hero {
+        height: 300px;
+        width: 100vw;
+        margin-top: 55px;
+
+        @include media(md) {
+            height: 500px;
+        }
+
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+    }
+
+    &__wrapper {
+        max-width: $maxWidth;
+        margin: 0 auto;
+        padding: 40px 15px 60px;
+
+        @include media(md) {
+            padding-top: 60px;
+        }
+    }
+
+    &__content {
+        max-width: $maxWidthContent;
+    }
+
+    // &__border {
+    //     position: relative;
+
+    //     @include media(md) {
+    //         border: 20px solid $green;
+    //         min-height: 800px;
+    //         padding: 20px;
+    //     }
+
+    //     &::after {
+    //         content: "";
+    //         display: none;
+    //         position: absolute;
+    //         bottom: -20px;
+    //         right: -20px;
+    //         background-color: $purple;
+    //         background-image: url("./img/logo_yellow.png");
+    //         background-position: right;
+    //         background-size: 90%;
+    //         background-repeat: no-repeat;
+    //         width: 130px;
+    //         height: 75px;
+
+    //         .single-treatment &,
+    //         .single-activity & {
+    //             background-color: $yellow;
+    //             background-image: url("./img/logo_purple.png");
+    //         }
+
+    //         .single-training & {
+    //             background-color: $darkGreen;
+    //         }
+
+    //         @include media(md) {
+    //             display: block;
+    //         }
+    //     }
+    // }
+}

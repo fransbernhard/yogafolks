@@ -6,8 +6,8 @@
 
 @import "base";
 @import "editor";
-@import "wysiwyg";
 
+@import "partials/wysiwyg";
 @import "partials/header";
 @import "partials/menu";
 @import "partials/social";
@@ -21,3 +21,4 @@
 @import "containers/treatments";
 @import "containers/trainings";
 @import "containers/single";
+@import "containers/single-treatment";

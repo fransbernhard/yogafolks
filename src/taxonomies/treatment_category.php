@@ -32,5 +32,5 @@ add_action('init', function() {
         'show_in_rest' => true,
     ];
 
-    register_taxonomy('activity_category', ['activity'], $args);
+    register_taxonomy('treatment_category', ['treatment'], $args);
 }, 0);

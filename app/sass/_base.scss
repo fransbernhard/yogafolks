@@ -8,11 +8,13 @@ html {
     font-size: 62.5%;
 }
 
-body.home {
+body.home,
+body.page-template-template-treatments {
     background-color: $yellow;
 }
 
 body.page-template-template-membership,
+body.page-template-template-activities,
 body.error404 {
     background-color: $purple;
 }
@@ -26,8 +28,8 @@ img {
     height: auto;
 }
 
-h1, 
-h2, 
+h1,
+h2,
 h3 {
     font-family: futura-pt-bold, arial, sans-serif;
     font-weight: $weightBold;

@@ -1,7 +1,7 @@
 .single {
     min-height: 100vh;
     background-color: $yellow;
-    
+
     .single-training & {
         background-color: $darkGreen;
     }
@@ -15,7 +15,7 @@
         margin: 0 auto;
         padding: 150px 15px 60px;
 
-        @include media(md) { 
+        @include media(md) {
             padding-top: 100px;
         }
     }
@@ -23,7 +23,7 @@
     &__border {
         position: relative;
 
-        @include media(lg) { 
+        @include media(md) {
             border: 20px solid $green;
             min-height: 800px;
             padding: 20px;
@@ -53,7 +53,7 @@
                 background-color: $darkGreen;
             }
 
-            @include media(lg) { 
+            @include media(md) {
                 display: block;
             }
         }
@@ -74,7 +74,6 @@
         .single-event & {
             color: $yellow;
         }
-
     }
 
     &__text {

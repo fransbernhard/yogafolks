@@ -2,8 +2,8 @@
     padding: 150px 15px;
     margin: auto;
 
-    @include media(md) { 
-        padding: 120px 0;
+    @include media(md) {
+        padding: 120px 15px;
     }
 
     &__title {

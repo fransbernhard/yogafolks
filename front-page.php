@@ -1,7 +1,7 @@
-<?php 
+<?php
     global $post;
 
-    get_header(); 
+    get_header();
 
     $links = get_field('links');
 
@@ -18,9 +18,9 @@
     <section class="introduction">
         <div class="introduction__wrapper">
             <div class="introduction__border">
-                <img 
-                    class="introduction__image" 
-                    src="<?= get_the_post_thumbnail_url($post->ID, "large"); ?>" 
+                <img
+                    class="introduction__image"
+                    src="<?= get_the_post_thumbnail_url($post->ID, "large"); ?>"
                 />
                 <div class="introduction__description">
                     <?= get_the_content($post->ID); ?>
@@ -28,9 +28,9 @@
                 <?php if($links): ?>
                     <div class="introduction__links">
                         <?php foreach($links as $link): ?>
-                            <a 
-                                class="introduction__link" 
-                                href="<?= $link['link']['url']; ?>" 
+                            <a
+                                class="introduction__link"
+                                href="<?= $link['link']['url']; ?>"
                             >
                                 <?= $link['link']['title']; ?>
                             </a>
@@ -51,19 +51,19 @@
 
                 <div class="about__contact">
                     <?php if($contactImageLink): ?>
-                        <a 
-                            class="about__contact__map-link" 
-                            target="_blank" 
+                        <a
+                            class="about__contact__map-link"
+                            target="_blank"
                             href="<?php $contactImageLink; ?>"
                         >
-                            <img 
-                                class="about__contact__map" 
+                            <img
+                                class="about__contact__map"
                                 src="<?= $contactImage['url']; ?>"
                             />
                         </a>
                     <?php else: ?>
-                        <img 
-                            class="about__contact__map" 
+                        <img
+                            class="about__contact__map"
                             src="<?= $contactImage['url']; ?>"
                         />
                     <?php endif; ?>
