@@ -10,7 +10,7 @@
         'hide_empty' => true
     ]);
 
-    $activeCategorySlug = isset($_GET["type"]) ? $_GET["type"] : 'treatment';
+    $activeCategorySlug = isset($_GET["type"]) ? $_GET["type"] : $categories[0]->slug;
 
     $items = get_posts([
 		'post_type' => 'treatment',

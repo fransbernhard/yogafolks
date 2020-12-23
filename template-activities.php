@@ -12,7 +12,7 @@
         'hide_empty' => true
     ]);
 
-    $activeCategorySlug = isset($_GET["type"]) ? $_GET["type"] : 'event';
+    $activeCategorySlug = isset($_GET["type"]) ? $_GET["type"] : $categories[0]->slug;
 
 	$items = get_posts([
 		'post_type' => 'activity',
